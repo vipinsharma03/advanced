@@ -26,11 +26,11 @@ var sampleapp=angular.module('sampleApp', [])
   function ($routeProvider) {
       $routeProvider.
       when('/AddNewOrder', {
-          templateUrl: '../utility/View/add_order.html',
+          templateUrl: 'add_order.html',
           controller: 'AddOrderController'
       }).
       when('/ShowOrders', {
-          templateUrl: '../utility/View/show_orders.html',
+          templateUrl: 'show_orders.html',
           controller: 'ShowOrdersController'
       }).
       otherwise({
@@ -41,7 +41,7 @@ var sampleapp=angular.module('sampleApp', [])
 
 
   sampleapp.controller('AddOrderController', function ($scope) {
-      alert('hi');
+      //alert('hi');
       $scope.message = 'This is Add new order screen';
 
   });
