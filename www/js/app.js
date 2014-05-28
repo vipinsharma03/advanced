@@ -26,7 +26,7 @@ var sampleapp=angular.module('sampleApp', [])
   function ($routeProvider) {
       $routeProvider.
       when('/AddNewOrder', {
-          templateUrl: './add_order.html',
+          templateUrl: '/add_order.html',
           controller: 'AddOrderController'
       }).
       when('/ShowOrders', {
@@ -41,7 +41,7 @@ var sampleapp=angular.module('sampleApp', [])
 
 
   sampleapp.controller('AddOrderController', function ($scope) {
-      //alert('hi');
+      
       $scope.message = 'This is Add new order screen';
 
   });
