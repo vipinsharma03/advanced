@@ -26,11 +26,11 @@ var sampleapp=angular.module('sampleApp', [])
   function ($routeProvider) {
       $routeProvider.
       when('/AddNewOrder', {
-          templateUrl: 'add_order.html',
+          templateUrl: './add_order.html',
           controller: 'AddOrderController'
       }).
       when('/ShowOrders', {
-          templateUrl: 'show_orders.html',
+          templateUrl: './show_orders.html',
           controller: 'ShowOrdersController'
       }).
       otherwise({
