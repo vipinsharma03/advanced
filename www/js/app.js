@@ -1,10 +1,28 @@
-﻿//Define an angular module for our app
-var sampleApp = angular.module('sampleApp', []);
+﻿
+var app = {
+    initialize: function() {
+        this.bindEvents();
+    },
+    bindEvents: function() {
+        document.addEventListener('deviceready', this.onDeviceReady, true);
+    },
 
-//Define Routing for app
-//Uri /AddNewOrder -> template add_order.html and Controller AddOrderController
-//Uri /ShowOrders -> template show_orders.html and Controller AddOrderController
-sampleApp.config(['$routeProvider',
+    onDeviceReady: function() {
+        angular.element(document).ready(function() {
+            angular.bootstrap(document);
+        });
+    },
+};
+
+
+
+//Define an angular module for our app
+var sampleapp=angular.module('sampleApp', [])
+.config(function ($compileProvider) {
+    $compileProvider.urlSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
+})
+
+.config(['$routeProvider',
   function ($routeProvider) {
       $routeProvider.
       when('/AddNewOrder', {
@@ -22,14 +40,14 @@ sampleApp.config(['$routeProvider',
   } ]);
 
 
-  sampleApp.controller('AddOrderController', function ($scope) {
+  sampleapp.controller('AddOrderController', function ($scope) {
       alert('hi');
       $scope.message = 'This is Add new order screen';
 
   });
 
 
-sampleApp.controller('ShowOrdersController', function ($scope) {
+sampleapp.controller('ShowOrdersController', function ($scope) {
 
     $scope.message = 'This is Show orders screen';
 
