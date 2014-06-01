@@ -30,7 +30,7 @@ var sampleapp=angular.module('sampleApp', [])
           controller: 'AddOrderController'
       }).
       when('/ShowOrders', {
-          templateUrl: './show_orders.html',
+          templateUrl: 'show_orders.html',
           controller: 'ShowOrdersController'
       }).
       otherwise({
