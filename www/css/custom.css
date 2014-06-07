@@ -1,0 +1,28 @@
+﻿@import url("bootstrap.min.css");
+
+
+.topbar
+{
+     background-color:#999;
+     position:absolute;
+     top:10px;
+     height:18%;
+     width:1200px;
+     right:20px
+}
+.nav
+{
+     background-color:#999;
+     position:absolute;
+     top:10px;
+     left:10px;
+    height:100%;
+    width:150px;
+}
+.navitem
+{
+    margin-top:140px;    
+    color:white;
+    font-size:20px;       
+    text-align:center;    
+}
