@@ -1,6 +1,15 @@
 ﻿@import url("bootstrap.min.css");
 
-
+  
+.list-group
+{
+    margin-top:81px;
+}
+.list-group-item:last-child
+{
+    width:86px;
+    margin-left:4px;
+    }
 .topbar
 {
      background-color:#999;
