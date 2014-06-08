@@ -1,10 +1,13 @@
 ﻿<div id="main">
     <div id="home" class="nav">
         <div id="menuitems" ng-controller="HomeContoller">
-            <div class="navitem" ng-repeat="item in menu"><span class="glyphicon glyphicon-th"> {{item.text}}</span></div>
+            <div class="navitem" ng-repeat="item in menu">
+           <!-- <span class="glyphicon glyphicon-th"> {{item.text}}</span>-->
+            <a href="#" class="btn btn-primary btn-lg disabled" role="button">{{item.text}}</a>
+            </div>
         </div>
     </div>
     <div id="leftnav" class="topbar">
-    <div id="contentbar" ></div>
+    <div id="contentbar"></div>
 </div>
 
