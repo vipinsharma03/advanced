@@ -6,18 +6,19 @@
      background-color:#999;
      position:absolute;
      top:10px;
-     height:18%;
+     height:16%;
      width:1200px;
-     right:20px
+     right:20px;
+     margin-top:-11;
 }
 .nav
 {
      background-color:#999;
      position:absolute;
      top:10px;
-     left:10px;
+     left:0px;
     height:100%;
-    width:150px;
+    width:94px;
 }
 .navitem
 {
