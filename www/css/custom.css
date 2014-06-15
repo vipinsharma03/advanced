@@ -70,19 +70,35 @@
     font-size:large;
 }
 
-
-/* IPHONE 4 ONLY */
-@media screen 
-and (device-width: 320px) 
-and (device-height: 480px) 
-and (orientation : landscape) 
+.navNext
 {
-
-.itemText
+    position:absolute;
+    left:288px;
+    top:30px;
+    color:#999;
+}
+@media screen and (min-width: 321px)
 {
-    font-weight:bolder;
-    font-size:x-small;
-    background-color:Green;
+    .list-group
+    {
+        width:451px;
+        margin-left:-5px;
+        margin-top:11px;
+        border-bottom-style:none;
+        border-bottom:1px;
+        border-bottom-color:White;   
+    }
+    .navNext
+    {
+        position:absolute;
+        left:421px;
+        top:30px;
+        color:#999;
+        
+    }
 }
 
-}
+
+
+
+
