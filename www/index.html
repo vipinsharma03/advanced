@@ -3,7 +3,9 @@
 <html  ng-app="sampleApp">
   <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0,user-scalable=0, target-densityDpi=device-dpi" />
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen"/>
    <link href="css/custom.css" rel="stylesheet" type="text/css" />
       <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
@@ -19,9 +21,11 @@
     <title>sample</title>
   </head>
  
-  <body style="background-color:#eee">
+  <body style="background-color:#5bc0de">
    
-        <ng-view></ng-view>
+        <ng-view>
+        <div></div>
+        </ng-view>
 
     
        

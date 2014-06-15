@@ -31,13 +31,25 @@ var sampleapp=angular.module('sampleApp', ['ngRoute'])
       $scope.menu = [];
       $scope.menu.push(
       {
-      text:'View'
+      text:'View',
+      icon:'search'
   })
   $scope.menu.push(
       {
-          text: 'Edit'
-      })
-      
+          text: 'Edit',
+          icon: 'pencil'
 
+      })
+
+      $scope.menu.push(
+      {
+          text: 'Delete',
+          icon: 'trash'
+      })
+      $scope.menu.push(
+      {
+          text: 'Add',
+          icon: 'plus'
+      })
   });
 

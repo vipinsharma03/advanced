@@ -1,6 +1,13 @@
 ﻿@import url("bootstrap.min.css");
 
   
+/*a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus
+{
+    width:318px;
+    right:23px;
+}  
+  
+
 .list-group
 {
     margin-top:81px;
@@ -35,4 +42,47 @@
     color:white;
     font-size:20px;       
     text-align:center;    
+}
+*/
+
+.list-group
+{
+    width:316px;
+    margin-left:-19px;
+    margin-top:68px;
+    /*border-style:none;*/
+    border-bottom-style:none;
+    border-bottom:1px;
+    border-bottom-color:White;   
+}
+
+.list-group-item
+{
+    padding-top:25px;
+    padding-bottom:25px;
+    border-bottom:2px;
+    border-style:solid;
+    border-bottom-color:#5bc0de;
+}
+.itemText
+{
+    font-weight:bolder;
+    font-size:large;
+}
+
+
+/* IPHONE 4 ONLY */
+@media screen 
+and (device-width: 320px) 
+and (device-height: 480px) 
+and (orientation : landscape) 
+{
+
+.itemText
+{
+    font-weight:bolder;
+    font-size:x-small;
+    background-color:Green;
+}
+
 }

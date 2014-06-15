@@ -1,18 +1,6 @@
-﻿<div id="main">
-    <div id="home" class="nav">
-        <div id="menuitems" ng-controller="HomeContoller">
-            <div ng-repeat="item in menu">
-                <div class="list-group">                    
-                    <a  href="#" class="list-group-item">{{item.text}}</a>
-                </div>
-            </div>           
-        </div>
-    </div>
-    <div id="topnav" class="topbar"></div>
-    <div id="content" >
-    
-    </div>
+﻿
+ <div class="list-group">
+  <a ng-repeat="item in menu" href="#" class="list-group-item">
+  <span class="glyphicon glyphicon-{{item.icon}}">  <span class="itemText">{{item.text}}</span></span></a>
 </div>
-    
-
 
